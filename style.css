@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    background-color: burlywood;
+}
+
+header #logo {
+    height: 50px;
+}
+
+header nav,
+header nav ul,
+header nav ul li {
+    display: inline;
+}
+
+/*Este media, se aplicará a partir de los 319px*/
+@media(max-width: 675px) {
+
+    /*Este selector, selecciona al header y el estilo que se aplica es una altura de 200px*/
+    header {
+        height: 200px;
+    }
+
+    /*Aquí seleccionamos 3 elementos y cambiamos su display a bloc + alineamos su texto */
+    header nav,
+    header nav ul,
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+}
+
+/*Este media, se aplicará a partir de los 426px*/
+@media(max-width: 426px) {
+    /*selecciona los enlaces, y le pone un tamaño de 25px*/
+    a {
+        font-size: 25px;
+    }
+}
+
+/*Este media, se aplicará a partir de los 769px*/
+@media(max-width: 769px) {
+    /*selecciona los enlaces, y le pone un tamaño de 36px*/
+    a {
+        font-size: 36px;
+    }
+}
